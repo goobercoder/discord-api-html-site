@@ -22,9 +22,9 @@ def getvalue():
     }
     response = requests.post(w, json=data)
     print(data)
-    if response == "<Response [204]>":
-        suc = 'yes'
-    return render_template('pass.html', s=suc)
+    
+        
+    return render_template('pass.html', n=name, r=response, d=data)
 
 
    
